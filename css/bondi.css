@@ -1,0 +1,229 @@
+:root {
+  --dark: #19283f;
+  --green: #33d2cc;
+  --red: #ff3150;
+  --yellow: #ffc400;
+  --section: #eff7fa;
+}
+.main-btn {
+  background-color: var(--red);
+  color: var(--yellow);
+  padding: 0.5rem 1rem;
+}
+.main-btn:hover {
+  color: black;
+  background-color: var(--red);
+}
+.main-title::after {
+  content: "";
+  position: absolute;
+  background-color: var(--green);
+  width: 120px;
+  height: 2px;
+  bottom: -20px;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+/* start navbsr */
+.navbar {
+  background-color: var(--dark);
+}
+.navbar p {
+  font-size: 50px;
+  color: var(--green);
+  font-family: "Whisper", cursive;
+}
+.navbar-brand img {
+  width: 10%;
+}
+.nav-link {
+  color: white;
+}
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover,
+.nav-item .nav-link:focus {
+  color: var(--green);
+}
+.navbar .serch {
+  border-left: 1px solid var(--green);
+}
+.navbar .serch svg {
+  color: var(--green);
+}
+.navbar .navbar-toggler {
+  color: white;
+  border-color: white;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+@media (max-width: 992px) {
+  .navbar .navbar-toggler {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+}
+/* end navbar */
+/* Start landing */
+.landing {
+  background-color: var(--dark);
+  min-height: calc(100vh - 72px);
+}
+/* End landing */
+/* Start fetures */
+.fetures .fate .icons {
+  height: 200px;
+}
+.fetures .fate .icons svg {
+  left: 50%;
+  transform: translatex(-50%);
+  -webkit-transform: translatex(-50%);
+  -moz-transform: translatex(-50%);
+  -ms-transform: translatex(-50%);
+  -o-transform: translatex(-50%);
+}
+.fetures .fate .icons .number {
+  color: var(--section);
+  font-size: 12rem;
+}
+.fetures .fate .icons .icon {
+  color: var(--green);
+}
+/* End fetures */
+/* start our work */
+.our-work {
+  background-color: var(--section);
+}
+.our-work ul li {
+  padding: 0.5rem 1rem;
+}
+.our-work ul li:not(.active):hover {
+  color: var(--red);
+}
+.our-work .box {
+  padding: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.our-work .box::before {
+  content: attr(data-work);
+  position: absolute;
+  background-color: #33d2cc70;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  transition: 0.4s;
+  transform: translateX(calc(-100% - 5px));
+  -webkit-transform: translateX(calc(-100% - 5px));
+  -moz-transform: translateX(calc(-100% - 5px));
+  -ms-transform: translateX(calc(-100% - 5px));
+  -o-transform: translateX(calc(-100% - 5px));
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.our-work .box:hover:before {
+  transform: translatex(0);
+  -webkit-transform: translatex(0);
+  -moz-transform: translatex(0);
+  -ms-transform: translatex(0);
+  -o-transform: translatex(0);
+}
+/* end our work */
+/* start stuff */
+.stuff .descripion {
+  max-width: 500px;
+}
+/* end stuff */
+/* start our-team */
+.our-team {
+  background-color: var(--section);
+}
+.our-team .box h4 {
+  background-color: var(--green);
+}
+/* end our-team */
+.pro {
+  background-color: var(--dark);
+}
+/* start subscribe */
+.subscribe {
+  background-color: var(--yellow);
+}
+.subscribe .sub {
+  color: var(--dark);
+}
+.subscribe .in {
+  border: none;
+  border-bottom: 1px solid white;
+}
+.subscribe .in:focus {
+  outline: none;
+}
+.subscribe ::placeholder {
+  color: white;
+}
+
+.subscribe input[type="submit"] {
+  background-color: var(--dark);
+  color: var(--yellow);
+}
+/* end subscribe */
+/* satr footer */
+.footer {
+  background-color: var(--dark);
+}
+.footer .go,
+.footer .lo {
+  color: white;
+}
+.footer .tn {
+  color: var(--green);
+}
+.footer .copyright > span {
+  color: var(--green);
+}
+.footer .copyright div span {
+  color: var(--yellow);
+}
+/* end footer */
+.top{
+  position: fixed;
+  bottom:-50px;
+  right: 10px;
+  background-color: #33d2cc;
+  padding:0px  10px;
+  font-size: 30px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  cursor: pointer;
+}
+.top.show{
+  bottom:30px;
+}
+.top.up{
+  top: 30px;
+  display: none;
+  
+}
